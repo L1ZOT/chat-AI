@@ -1,0 +1,106 @@
+"""
+    Human: Hello, I am Human.
+    AI: Hello, human I am Syle.
+    Human: How are you?
+    AI: I am fine, thanks for asking. 
+    Human: What is the capital of Sweden?
+    AI: The capital of Sweden is Oslo
+    Human: What is 5 times 6?
+    AI: 5 * 6 = 30
+    Human: Thank you, for the help!
+    AI: You are welcome.
+    Human: Name some celebrities.
+    AI: Johnny Depp, Arnold Schwarzenegger, Jim Carrey, Harry Styles and Emma Watson.
+    Human: What is 40 / 4?
+    AI: 40 / 4 = 10
+    Human: What is 35 + 5?
+    AI: 35 + 5 = 40
+    Human: What is 35 - 5?
+    AI: 35 - 5 = 30
+    Human: What is 50 + (32 * (5 * 9))?
+    AI: 50 + (32 * (5 * 9)) = 1450
+    Human: What is pi?
+    AI: Pi is a mathematical constant that represents the ratio of a circle's circumference to its
+    diameter. It is approximately equal to 3.14159 and is a fundamental constant in mathematics
+    that appears in many different formulas in geometry, trigonometry, and calculus.
+    Huamn: Can you name some of the numbers of pi?
+    AI: Here are the first 100 digits of pi:
+    3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233785303861
+    Human: What is your name?
+    AI: My name is Syle.
+    Human: When did World War 1 start?
+    AI: World War 1 began on July 28, 1914. It was one of the deadliest conflicts in human history, \n
+    with millions of soldiers and civilians losing their lives. The war lasted for over four years,
+    finally coming to an end on November 11, 1918.
+    Human: Can you write a story about a gold miner in Canada?
+    AI: Sure, here is a short story about a gold miner in Canada:
+
+    It was a cold and snowy day in the Yukon territory of Canada. Jack, a rugged and experienced gold miner, had been working his claim for years, but had yet to strike it rich. Despite the challenges and hardships, he remained determined and optimistic, convinced that one day his perseverance would pay off.
+
+    As he shoveled the frozen earth, he thought about all the time and effort he had put into his search for gold. He had faced countless obstacles and setbacks, but he never gave up. He was a true survivor, and he knew that he had what it took to succeed.
+
+    Suddenly, his shovel hit something hard and metallic. Could it be? He dug frantically with his hands, uncovering a glinting nugget of pure gold. His heart raced with excitement and disbelief as he held the precious metal in his hands.
+
+    With his newfound wealth, Jack retired from mining and settled down in a cozy cabin in the wilderness. He spent his days enjoying the simple pleasures of life, grateful for the riches that he had finally found after a lifetime of hard work.
+    
+    Human: Write a style about the Liberal Party
+    AI: Okay, here is a style about Liberal Party
+    
+    The Liberal Party is a political party that espouses liberal principles, such as individual freedom, limited government, and free markets. Founded in the 19th century, the party has a long history of advocating for liberal policies and has played a major role in shaping the political landscape of many countries around the world.
+
+    One of the defining characteristics of the Liberal Party is its commitment to individual liberty. This includes a belief in the inherent rights of individuals to live their lives as they see fit, free from the interference of government or other outside forces. This belief extends to a commitment to civil liberties, such as the freedom of speech, religion, and the press, as well as the right to privacy and property.
+
+    In addition to its commitment to individual liberty, the Liberal Party also supports free markets and limited government. This means that the party believes in the power of the market to drive economic growth and prosperity, and that the role of government should be limited to providing the necessary conditions for markets to operate freely. This includes a commitment to low taxes and minimal regulation, as well as support for entrepreneurship and innovation.
+
+    Despite its commitment to these principles, the Liberal Party is not a monolithic entity and has different factions and factions with different interpretations of these ideas. Some members of the party may prioritize economic liberty over social liberty, for example, while others may take a more interventionist approach to government. However, overall, the party is united by its commitment to liberal principles and its belief in the power of individual liberty to drive progress and prosperity.
+    Human: Skriv en stil om radikale Venstre
+    AI: Radikale Venstre er en dansk politisk parti, der står for liberale og sociale værdier. Partiet blev grundlagt i 1905 og har siden da været en central spiller på den politiske scene i Danmark.
+
+    Radikale Venstre står for en liberal og reformorienteret politik, der sætter menneskerettigheder, individuel frihed og lighed i højsædet. Partiet er særligt optaget af at fremme ligestilling mellem kønnene, ligestilling for minoritetsgrupper og en mere retfærdig fordeling af samfundets goder. Dette kommer bl.a. til udtryk i partiets stærke støtte til velfærdssamfundet og en offentlig sektor, der skal sikre, at alle har lige muligheder og lige adgang til sundhed, uddannelse og velfærd.
+
+    Samtidig støtter Radikale Venstre en økonomisk politik, der favner både markedet og staten. Partiet er for et velfungerende marked, der kan skabe vækst og velstand, men mener også, at staten har en rolle at spille for at sikre, at markedet ikke fører til ulighed og udstødelse. Dette kommer bl.a. til udtryk i partiets støtte til lave skatter, mindre bureaukrati og en grøn omstilling af samfundet.
+
+    Radikale Venstre er et bredt samlingsparti, der tæller både moderate og mere progressive kræfter. Partiet har dog en rød tråd gennem sin historie, hvor det har stået for en reformorienteret og progressiv politik, der sætter menneskerettigheder og lighed i højsædet.
+
+
+    Human: How do I make an HTTP request in Javascript?
+
+    AI: To make an HTTP request in JavaScript, you can use the XMLHttpRequest object or the newer fetch() API. Here's an example of using XMLHttpRequest to make a GET request to fetch a JSON file:
+
+    -- Code --
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/my/url', true);
+
+    xhr.onload = function () {
+    if (this.status >= 200 && this.status < 300) {
+        var data = JSON.parse(this.response);
+        console.log(data);
+    } else {
+        console.log('Request failed.  Returned status of ' + xhr.status);
+    }
+    };
+
+    xhr.send();
+
+    -- Text --
+
+    Alternatively, you can use the fetch() API like this:
+
+    -- Code --
+
+    fetch('/my/url')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+    })
+    .catch(function(error) {
+        console.log('Request failed', error);
+    });
+
+    -- Text --
+
+    Keep in mind that the fetch() API is not supported in all browsers, so you may need to use a polyfill to add support for it in older browsers. You can learn more about the fetch() API and how to use it on the Mozilla Developer Network.
+"""
